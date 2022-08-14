@@ -1,0 +1,9 @@
+//base
+@use 'base/_mixin' as m; //_mixin.scss
+
+//parts
+@use 'parts/_card'; //_card.scss
+
+.container{
+    @include m.container-base;
+}

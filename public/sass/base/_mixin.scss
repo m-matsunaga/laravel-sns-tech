@@ -1,0 +1,13 @@
+@use '../base/variable' as v; //_variable.scss
+
+@mixin container-base($size:600px, $px:80px) {
+    width: $size;
+    margin: 0 auto;
+    padding-top: $px;
+}
+
+@mixin box($ppx:20px, $mpx:20px){
+    margin-bottom: $mpx;
+    padding:$ppx;
+    border: v.$box-border;
+}

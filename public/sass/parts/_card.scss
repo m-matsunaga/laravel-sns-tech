@@ -1,0 +1,21 @@
+//base
+@use '../base/mixin' as m; //_mixin.scss
+@use '../base/variable' as v; //_variable.scss
+
+.card-box{
+    @include m.box;
+}
+
+.card-body-up{
+    display: flex;
+    padding-bottom: 3px;
+    border-bottom: v.$box-border;
+}
+
+.fa-user-circle{
+    margin-right: 20px;
+}
+
+.card-title{
+    font-weight: bold;
+}

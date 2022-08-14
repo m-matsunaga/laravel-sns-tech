@@ -4,8 +4,9 @@
 @section('title','記事一覧')
 
 @section('content')
+@include('nav-top')
 
-<div class="container">
+<div class="container-box">
     <!-- card 繰り返し開始 -->
     @foreach($articles as $article)
     <div class="card-box">
@@ -21,7 +22,7 @@
             </div>
         </div>
         <div class="card-body-down">
-            <h3 class="card-title">
+            <h3 class="title">
             {{$article->title}}
             </h3>
             <div class="card-text">

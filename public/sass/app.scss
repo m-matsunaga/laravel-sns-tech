@@ -4,6 +4,6 @@
 //parts
 @use 'parts/_card'; //_card.scss
 
-.container{
+.container-box{
     @include m.container-base;
 }

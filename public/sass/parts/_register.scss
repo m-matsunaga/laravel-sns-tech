@@ -1,0 +1,31 @@
+//base
+@use '../base/mixin' as m; //_mixin.scss
+@use '../base/variable' as v; //_variable.scss
+
+.register-container{
+    @include m.container-base($size:500px, $px:80px);
+    @include m.box($ppx:20px, $mpx:0px);
+    box-shadow: 15px 15px 0px 0 v.$main-color;
+}
+
+.app-logo{
+    @include m.logo;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.register-title{
+    @include m.title;
+}
+
+.form-style{
+    width: 450px;
+}
+
+.form-item{
+    padding-bottom: 15px;
+}
+
+.login-link{
+    text-align: center;
+}

@@ -6,19 +6,23 @@
 @section('content')
 
 <div class="container-box">
+    <div class="app-logo">
+        memo
+    </div>
     <div class="register-container">
-        <div class="app-title">
-            memo
-        </div>
         <div class="register-box">
             <h2 class="register-title">
                 ユーザー登録
             </h2>
+            <!-- エラーメッセージ 表示-->
+            @include('error_card_list')
+            <!--  -->
             <form action="{{ route('register') }}" method="post">
             @csrf
                 <div class="form-item">
                     <label for="name">User Name</label>
                     <input type="text" class="form-style" id="name" name="name" required value="{{ old('name') }}">
+                    <small>英数字3〜16文字(登録後の変更はできません)</small>
                 </div>
                 <div class="form-item">
                     <label for="mail">Mail Address</label>

@@ -3,6 +3,7 @@
 
 //parts
 @use 'parts/_card'; //_card.scss
+@use 'parts/_register'; //_register.scss
 
 .container-box{
     @include m.container-base;

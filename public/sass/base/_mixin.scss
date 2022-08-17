@@ -11,3 +11,14 @@
     padding:$ppx;
     border: v.$box-border;
 }
+
+@mixin logo($px:40px){
+    font-size: $px;
+    font-weight: bold;
+}
+
+@mixin title($px:24px,$place:center,$mbpx:20px){
+    font-size: $px;
+    text-align: $place;
+    margin-bottom: $mbpx;
+}

@@ -22,7 +22,7 @@
   font-weight: bold;
 }
 
-.register-container {
+.form-container {
   width: 500px;
   margin: 0 auto;
   padding-top: 80px;
@@ -39,7 +39,7 @@
   margin-bottom: 20px;
 }
 
-.register-title {
+.form-title {
   font-size: 24px;
   text-align: center;
   margin-bottom: 20px;

@@ -9,9 +9,9 @@
     <div class="app-logo">
         memo
     </div>
-    <div class="register-container">
-        <div class="register-box">
-            <h2 class="register-title">
+    <div class="form-container">
+        <div class="form-box">
+            <h2 class="form-title">
                 ユーザー登録
             </h2>
             <!-- エラーメッセージ 表示-->

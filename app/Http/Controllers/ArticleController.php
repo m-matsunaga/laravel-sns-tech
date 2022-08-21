@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Article;
+use App\Http\Requests\ArticleRequest;
 
 class ArticleController extends Controller
 {
@@ -18,7 +19,11 @@ class ArticleController extends Controller
         return view('articles.create');
     }
 
-    public function store(){
-        
+    public function store(ArticleRequest $request,Article $article){
+        $article->title = $request->title;
+        $article->body = $request->body;
+        $article->user_id = $request->user()->id;
+        $article->save();
+        return redirect()->route('articles.index');
     }
 }

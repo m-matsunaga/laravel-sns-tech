@@ -1,3 +1,4 @@
+@csrf
 <div class="form-item">
     <label for="title">タイトル</label>
     <input type="text" class="form-style" name="title" required value="{{ old('title') }}">

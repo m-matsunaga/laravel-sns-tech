@@ -22,3 +22,8 @@
     text-align: $place;
     margin-bottom: $mbpx;
 }
+
+@mixin form($width:450px,$height:auto){
+    width: $width;
+    height: $height;
+}

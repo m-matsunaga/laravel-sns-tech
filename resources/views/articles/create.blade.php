@@ -1,3 +1,4 @@
+
 @extends('app')
 
 @section('title','記事投稿画面')

@@ -19,7 +19,11 @@
 }
 
 .form-style{
-    width: 450px;
+    @include m.form;
+}
+
+.form-area-style{
+    @include m.form($width:450px,$height:300px);
 }
 
 .form-item{
@@ -29,3 +33,4 @@
 .login-link{
     text-align: center;
 }
+

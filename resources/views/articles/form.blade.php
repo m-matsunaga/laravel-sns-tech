@@ -4,5 +4,5 @@
 </div>
 <div class="form-item">
     <label for=""></label>
-    <textarea name="body"cols="30" rows="10" required class="form-area-style" placeholder="本文">{{ old('body') }}</textarea>
+    <textarea name="body" required class="form-area-style" placeholder="本文">{{ old('body') }}</textarea>
 </div>

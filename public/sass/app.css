@@ -47,6 +47,12 @@
 
 .form-style {
   width: 450px;
+  height: auto;
+}
+
+.form-area-style {
+  width: 450px;
+  height: 300px;
 }
 
 .form-item {

@@ -6,6 +6,7 @@
 
 .card-body-up {
   display: flex;
+  justify-content: space-between;
   padding-bottom: 3px;
   border-bottom: 1px solid gray;
 }

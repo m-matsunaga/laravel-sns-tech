@@ -29,6 +29,9 @@
                 <!-- hidden -->
                 <input type="hidden" name="remember" id="remember" value="on">
                 <!--  -->
+                <div class="pass-reset">
+                    <a href="{{ route('password.request') }}" class="pass-reset-link">パスワード忘れた方</a>
+                </div>
                 <button class="btn btn-block blue-gradient mt-2 mb-2" type="submit">ログイン</button>
             </form>
             <div class="login-link">

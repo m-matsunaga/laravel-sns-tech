@@ -64,5 +64,9 @@
             <div class="card-text">
             {{$article->body}}
             </div>
+            <div class="card-like">
+                <article-like>
+                </article-like>
+            </div>
         </div>
     </div>

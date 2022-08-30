@@ -57,7 +57,7 @@ class ArticleController extends Controller
         return [
             'id' => $article->id,
             'countLikes' => $article->count_likes,
-        ]
+        ];
     }
 
     public function unlike(Request $request, Article $article){
@@ -66,6 +66,6 @@ class ArticleController extends Controller
         return [
             'id' => $article->id,
             'countLikes' => $article->count_likes,
-        ]
+        ];
     }
 }

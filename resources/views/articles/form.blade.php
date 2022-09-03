@@ -1,10 +1,14 @@
 @csrf
+<!-- エラーメッセージ 表示-->
+    @include('error_card_list')
+<!--  -->
 <div class="form-item">
     <label for="title">タイトル</label>
     <input type="text" class="form-style" name="title" required value="{{ $article->title ?? old('title') }}">
 </div>
 <div class="form-item">
-    <article-tags-input>
+    <article-tags-input
+        :initial-tags='@json($tagNames ?? [])'>
     </article-tags-input>
 </div>
 <div class="form-item">

@@ -18,9 +18,9 @@
             <!--  ===============  -->
             <!--  -->
             @if (session('status'))
-              <div class="card-text alert alert-success">
-                {{ session('status') }}
-              </div>
+                <div class="card-text alert alert-success">
+                    {{ session('status') }}
+                </div>
             @endif
             <!--  -->
             <form action="{{ route('password.email') }}" method="post">

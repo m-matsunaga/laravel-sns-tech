@@ -78,7 +78,7 @@
                     <div class="card-tags">
                 @endif
                     <a href="" class="border p-1 mr-1 mt-1 text-muted">
-                        {{$tags->name}}
+                        {{$tags->Hashtag}}
                     </a>
                 @if ($loop->last)
                     </div>

@@ -77,7 +77,7 @@
                 @if($loop->first)
                     <div class="card-tags">
                 @endif
-                    <a href="" class="border p-1 mr-1 mt-1 text-muted">
+                    <a href="{{ route('tags.show', ['name' => $tags->name]) }}" class="border p-1 mr-1 mt-1 text-muted">
                         {{$tags->Hashtag}}
                     </a>
                 @if ($loop->last)

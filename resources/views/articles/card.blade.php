@@ -1,13 +1,17 @@
     <div class="card-box">
         <div class="card-body-up">
             <div>
-                <i class="fas fa-user-circle fa-3x mr-1"></i>
+                <a href="{{route('users.show',['name'=> $article->user->name])}}">
+                    <i class="fas fa-user-circle fa-3x mr-1"></i>
+                </a>
                 <div>
                     <div class="username">
-                    {{$article->user->name}}
+                        <a href="{{route('users.show',['name'=> $article->user->name])}}">
+                            {{$article->user->name}}
+                        </a>
                     </div>
                     <div class="card-date">
-                    {{$article->created_at->format('Y/m/d H:i')}}
+                        {{$article->created_at->format('Y/m/d H:i')}}
                     </div>
                 </div>
             </div>

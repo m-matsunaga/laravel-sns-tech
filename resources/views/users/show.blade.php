@@ -22,6 +22,11 @@
                     </div>
                 </div>
             </div>
+            <!-- Vue フォローボタン -->
+            @if(Auth::id() !== $user->id)
+            <follow-button>
+            </follow-button>
+            @endif
         </div>
         <div class="card-body-down">
             <div class="card-text">

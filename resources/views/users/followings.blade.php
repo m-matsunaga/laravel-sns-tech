@@ -10,10 +10,10 @@
 
 @include('users.user')
 
-@include('users.tabs', ['hasArticles' => true, 'hasLikes' => false])
+@include('users.tabs', ['hasArticles' => false, 'hasLikes' => false])
 
-@foreach($articles as $article)
-    @include('articles.card')
+@foreach($followings as $person)
+    @include('users.person')
 @endforeach
 </div>
 @endsection

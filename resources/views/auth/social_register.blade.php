@@ -1,4 +1,3 @@
-
 @extends('app')
 
 @section('title','ユーザー登録')
@@ -14,14 +13,12 @@
             <h2 class="form-title">
                 ユーザー登録
             </h2>
-            <a href="{{ route('login.{provider}', ['provider' => 'google']) }}" class="btn btn-block btn-danger">
-                <i class="fab fa-google mr-1"></i>Googleでログイン
-            </a>
             <!-- エラーメッセージ 表示-->
             @include('error_card_list')
             <!--  -->
-            <form action="{{ route('register') }}" method="post">
+            <form action="{{ route('register.{provider}', ['provider' => $provider]) }}" method="post">
             @csrf
+                <input type="hidden" name="token" value="{{ $token }}">
                 <div class="form-item">
                     <label for="name">User Name</label>
                     <input type="text" class="form-style" id="name" name="name" required value="{{ old('name') }}">
@@ -29,15 +26,7 @@
                 </div>
                 <div class="form-item">
                     <label for="mail">Mail Address</label>
-                    <input type="text" class="form-style" id="email" name="email" required value="{{ old('email') }}">
-                </div>
-                <div class="form-item">
-                    <label for="password">Password</label>
-                    <input type="password" class="form-style" id="password" name="password">
-                </div>
-                <div class="form-item">
-                    <label for="password_confirmation">Password Confirmation</label>
-                    <input type="password" class="form-style" id="password_confirmation" name="password_confirmation">
+                    <input class="form-control" type="text" id="email" name="email" value="{{ $email }}" disabled>
                 </div>
                 <button class="btn btn-block blue-gradient mt-2 mb-2" type="submit">ユーザー登録</button>
             </form>
